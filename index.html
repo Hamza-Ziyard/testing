@@ -44,7 +44,7 @@
         }
         .main{
             position: fixed;
-            bottom: 20px;
+            bottom: 10px;
             right: 150px;
         }
         .widget-options{
@@ -94,12 +94,16 @@
             height: 85%;
     }
 
+    #fb-rrot{
+        display: none;
+    }
+
     </style>
 </head>
 <body>
     <div class="widget-options">
         <button class="options" id="cal" onclick="openWidget()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-        <div class="options" id="fb"><div id="fb-root"></div>
+        <div class="options" ><div id="fb-root"></div>
             <div id="fb-customer-chat" class="fb-customerchat">
             </div></div>
     </div>
@@ -158,13 +162,13 @@
             document.getElementById("open").style.display="none";
             document.getElementById("close").style.display="block";
             document.getElementById("cal").style.display="block";
-            document.getElementById("fb").style.display="block";
+            document.getElementById("fb-root").style.display="block";
         }
         function closeIcons(){
             document.getElementById("open").style.display="block";
             document.getElementById("close").style.display="none";
             document.getElementById("cal").style.display="none";
-            document.getElementById("fb").style.display="none";
+            document.getElementById("fb-root").style.display="none";
         }
 
         function openWidget(){
