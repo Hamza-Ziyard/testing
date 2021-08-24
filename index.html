@@ -99,7 +99,9 @@
 <body>
     <div class="widget-options">
         <button class="options" id="cal" onclick="openWidget()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-        <button class="options" id="fb"><div id="fb-root"></div></i></button>
+        <div class="options" id="fb"><div id="fb-root"></div>
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div></div>
     </div>
     <div class="main">
         <button class="main-btns" id="open" onclick="showIcons()"><i class="fa fa-plus" aria-hidden="true"></i></button>
@@ -128,8 +130,6 @@
       <!-- Messenger Chat plugin Code -->
 
     <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
 
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
